@@ -4,7 +4,8 @@
     "pages/logs/main", 
     "pages/catergory/main", 
     "pages/cat/main", 
-    "pages/my/main"  ],
+    "pages/my/main",
+    "pages/goods_list/main"  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fe2c4b",

@@ -20,7 +20,7 @@
           </div>
           <div class="cate-right-body">
            <block  v-for="(item3,index3) in item2.children" :key="index3">
-              <div class="box">
+              <div class="box" @tap="goodslist(item3.cat_name)">
                 <image :src="item3.cat_icon" mode="aspectFit"></image>
                 <div class="text">{{item3.cat_name}}</div>
               </div>
@@ -66,6 +66,12 @@ export default {
           this.activeright = res.data.message[this.activenum].children;
         }
       );
+    },
+    goodslist(name){
+      wx.navigateTo({
+        url: '/pages/goods_list/main'+'?name='+name
+      })
+      // console.log(name);
     }
   }
 };
